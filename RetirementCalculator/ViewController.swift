@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtFld2: UITextField!
     @IBOutlet weak var txtFld3: UITextField!
     @IBOutlet weak var txtFld4: UITextField!
+    @IBOutlet weak var txtFld5: UITextField!
     @IBOutlet weak var lbl: UILabel!
     
     override func viewDidLoad() {
@@ -40,6 +41,16 @@ class ViewController: UIViewController {
 
     @IBAction func tappedOnBtn(_ sender: Any) {
         
+        // Calculated text
+        let currentAgeInt = Int(txtFld1.text ?? "") ?? 0
+        let retirementAgeInt = Int(txtFld2.text ?? "") ?? 0
+        let monthlyInvestment = Double(txtFld3.text ?? "") ?? 0
+        let currentSavings = Double(txtFld4.text ?? "") ?? 0
+        let interestRate = Double(txtFld5.text ?? "") ?? 0
+        
+        lbl.text = "If you save Rs \(monthlyInvestment) every month for \(retirementAgeInt - currentAgeInt) years and invest that money and your current savings of Rs \(currentSavings) at an annual interest rate of \(interestRate)%, you will have Rs X amount at your retirement age"
+
+        // Analytics
         let currentAge = txtFld1.text ?? ""
         let retirementAge = txtFld2.text ?? ""
         let params = ["currentAge": currentAge, "retirementAge": retirementAge]
