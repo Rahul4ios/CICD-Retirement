@@ -44,11 +44,14 @@ class ViewController: UIViewController {
         // Calculated text
         let currentAgeInt = Int(txtFld1.text ?? "") ?? 0
         let retirementAgeInt = Int(txtFld2.text ?? "") ?? 0
-        let monthlyInvestment = Double(txtFld3.text ?? "") ?? 0
-        let currentSavings = Double(txtFld4.text ?? "") ?? 0
-        let interestRate = Double(txtFld5.text ?? "") ?? 0
+        let monthlyInvestment = Int(txtFld3.text ?? "") ?? 0
+        let currentSavings = Int(txtFld4.text ?? "") ?? 0
+        let interestRate = Int(txtFld5.text ?? "") ?? 0
         
-        lbl.text = "If you save Rs \(monthlyInvestment) every month for \(retirementAgeInt - currentAgeInt) years and invest that money and your current savings of Rs \(currentSavings) at an annual interest rate of \(interestRate)%, you will have Rs X amount at your retirement age"
+        let duration = retirementAgeInt - currentAgeInt
+        let dummyRetirementAmount = (duration * ((monthlyInvestment * 12) * interestRate)) + (duration * (currentSavings * interestRate))
+        
+        lbl.text = "If you save Rs \(monthlyInvestment) every month for \(retirementAgeInt - currentAgeInt) years and invest that money and your current savings of Rs \(currentSavings) at an annual interest rate of \(interestRate)%, you will have Rs \(dummyRetirementAmount) amount at your retirement age"
 
         // Analytics
         let currentAge = txtFld1.text ?? ""
