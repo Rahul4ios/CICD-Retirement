@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             
             let alertC = UIAlertController(title: "OOPs", message: "Sorry for that last crash. We are working on it.", preferredStyle: .alert)
             
-            let okAction = UIAlertAction(title: "Ok", style: .default)
+            let okAction = UIAlertAction(title: "OK", style: .default)
             alertC.addAction(okAction)
             
             present(alertC, animated: animated)
