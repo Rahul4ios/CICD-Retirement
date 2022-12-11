@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		386F06BE103D8C35347CE74E /* Pods_RetirementCalculator_RetirementCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67BE22EDC451C5E321FD82F2 /* Pods_RetirementCalculator_RetirementCalculatorUITests.framework */; };
+		3D33C6A62941CDCA00566D5E /* MyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D33C6A52941CDC900566D5E /* MyTests.swift */; };
 		3D7085DC293A21790076AA3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7085DB293A21790076AA3F /* AppDelegate.swift */; };
 		3D7085DE293A21790076AA3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7085DD293A21790076AA3F /* SceneDelegate.swift */; };
 		3D7085E0293A21790076AA3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7085DF293A21790076AA3F /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0684D27C6D97C2C7523909C7 /* Pods-RetirementCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetirementCalculator.release.xcconfig"; path = "Target Support Files/Pods-RetirementCalculator/Pods-RetirementCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		3D33C6A52941CDC900566D5E /* MyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTests.swift; sourceTree = "<group>"; };
 		3D7085D8293A21790076AA3F /* RetirementCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetirementCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7085DB293A21790076AA3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D7085DD293A21790076AA3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				3D7085FC293A217B0076AA3F /* RetirementCalculatorUITests.swift */,
+				3D33C6A52941CDC900566D5E /* MyTests.swift */,
 				3D7085FE293A217B0076AA3F /* RetirementCalculatorUITestsLaunchTests.swift */,
 			);
 			path = RetirementCalculatorUITests;
@@ -390,6 +393,7 @@
 			files = (
 				3D7085FD293A217B0076AA3F /* RetirementCalculatorUITests.swift in Sources */,
 				3D7085FF293A217B0076AA3F /* RetirementCalculatorUITestsLaunchTests.swift in Sources */,
+				3D33C6A62941CDCA00566D5E /* MyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +563,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +593,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
